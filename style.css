@@ -1,0 +1,21 @@
+h1{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+div.game-box{
+    display: flex;
+    justify-content: center;
+}
+
+div button{
+    margin: 10px;
+    padding: 5%;
+    border-radius: 20%;
+}
+
+div.result{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
