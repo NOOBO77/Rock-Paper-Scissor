@@ -39,16 +39,34 @@ function playGame(playerChoice){
             (computerChoice=="Paper" && playerChoice=="Scissor") ||
             (computerChoice=="Scissor" && playerChoice=="Rock")){
                 res="You Win!";
-            }
+    }
     else{
         res="You Lose!";
     }
 
-    document.getElementById('Result').textContent=`${res}`;
-}
+    let color;
 
+    if (res === "You Win!") {
+        color = "green";
+    } else if (res === "You Lose!") {
+        color = "red";
+    } else {
+        color = "orange";
+    }
+
+    document.getElementById('Result').textContent=res;
+
+    //it will not work as result class has many elements inside
+    // document.getElementsByClassName('result').style.color=color;
+    const elem = document.querySelectorAll('.result');
+
+    elem.forEach((e) =>{
+        e.style.color = color;  
+    });
+}
 document.addEventListener('keyup',playerkbd);
 
+//arrow finction for keyboard input
 // document.addEventListener('keydown',(event) => {
 //     const key=event.key.toLowerCase();
 //     if(key=="r"){

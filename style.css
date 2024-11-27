@@ -12,6 +12,7 @@ div button{
     margin: 10px;
     padding: 5%;
     border-radius: 20%;
+    background-color: rgb(223, 210, 210);
 }
 
 div.result{
