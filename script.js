@@ -1,4 +1,3 @@
-
 function computer(){
     let num=Math.random();
     if(num<=1/3){
